@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+}
+
+header {
+    background-color:#110000;
+    padding: 10px 0 0 0;
+}
+
+*{
+    text-decoration: none;
+    color: #CCCCFF;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+.title h2 {
+
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-2 img{
+    width: 20%;
+}
+
+.col-3 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 150px 0 150px;
+}
+
+.col-8 {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.col-2th {
+    flex : 0 0 20%;
+    max-width: 20%;
+    margin: 2%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.menu ul li {
+
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: unset;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: 22px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see through*/
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color:#FF0000;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicator */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px;}
+} 
+
+.slider-margin {
+    margin-top: 20px;
+}
+
+p {
+    color: black;
+}
+
+.image img { 
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 40px;
+}
+
+footer {
+    display: block;
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px 0 20px 0;
+}
+
+ul.menu_footer li {
+    list-style: none;
+}
+
+/* Product detail */
+section.detail-product {
+    margin: 100px 0;
+}
+
+section.detail-product .containers {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.detail-product .containers .details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.detail-product .containers .details .details-space {
+    margin-left: 200px;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+
+section.detail-product .containers .details .texts {
+    flex: 1;
+    text-align: center;
+}
+
+section.detail-product .containers .details .texts .change-color1 h1 {
+    font-size: 32px;
+    color:#CC33FF;
+}
+
+section.detail-product .containers .details .texts .change-color2 h1 {
+    font-size: 32px;
+    color: #0066FF;
+}
+
+section.detail-product .containers .details .texts .change-color3 h1 {
+    font-size: 32px;
+    color: #00FF00;
+}
+
+section.detail-product .containers .details .texts .change-color4 h1 {
+    font-size: 32px;
+    color: #FFCC00;
+}
+
+section.detail-product .containers .details .texts button {
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 5px 15px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #CCCCCC;
+
+}
+
+section.detail-product .containers .details .texts button:hover {
+    opacity: 0.8;
+}
+
+section.detail-product .containers .details .texts p{
+    font-weight: 200;
+    color: red;
+    font-size: 24px;
+}
+
+section.detail-product .containers .details .texts .images {
+    flex: 1;
+    text-align: center;
+}
+
+/* Description */
+section.detail-product .containers .description {
+    padding: 50px 0;
+}
+section.detail-product .containers .description input,
+section.box-des > div {
+    display: none;
+}
+section.detail-product .containers .description #box1:checked ~ section.box-des .box1,
+section.detail-product .containers .description #box2:checked ~ section.box-des .box2,
+section.detail-product .containers .description #box3:checked ~ section.box-des .box3{
+    display: block;
+}
+section.detail-product .containers .description nav {
+    width: 100%;
+    position: relative;
+}
+section.detail-product .containers .description nav  ul {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+section.detail-product .containers .description nav  ul li {
+    list-style: none;
+}
+section.detail-product .containers .description nav  ul li label{
+    padding: 10px 15px;
+    background-color: #FF33FF;
+    border-right: 1px solid #ccc;
+    font-size: 18px;
+}
+section.detail-product .containers .description section.box-des {
+    padding: 50px;
+    border:1px solid black;
+}
+section.detail-product .containers .description #box1:checked  ~ nav  ul li .check1,
+section.detail-product .containers .description #box2:checked  ~ nav  ul li .check2,
+section.detail-product .containers .description #box3:checked  ~ nav  ul li .check3 {
+    background-color: #ccc;
+}
+
+/* report */
+.report {
+    background-image: url(background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 600px;
+    text-align: center;
+    padding-top: 100px;
+} 
+
+.report textarea {
+    max-width: 750px;
+    height: 250px;
+}
+
+.report button {
+    font-size: 20px;
+    
+    width: 120px;
+    height: 50px;
+    
+}
+
+.report button a {
+    max-width: 100px;
+}
+
+/* payment */
+.payment-cover {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 100%;
+    height: 700px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.payment {
+    width: 400px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+.payment-cover input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.payment-cover button {
+    width: 100px;
+    height: 40px;
+}
+
+
+
+
+
+

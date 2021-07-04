@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<style>
+    div, h2, h4 {
+        color: black;
+    }
+    
+</style>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 menu">
+                    <img src="images/logo.png">
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-8 menu">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                        <li><a href="report.html">Report</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+    <section>
+        <div class="cover">
+            <div class="login">
+                <br>
+                <h2>Member login</h2>
+                <br>
+                <br>
+                <p>Email address</p>
+                <input type="text" placeholder="Enter email">
+                <br>
+                <p>Password</p>
+                <br>
+                <input type="password" placeholder="Enter password">
+                <br>
+                <br>
+                <div class="check">
+                    <input type="checkbox">
+                    Remember me
+                </div>
+                <br>
+                <button><a href="home.html">Login</a></button>
+                <br>
+                <br>
+                <a href="#">
+                    <h4>Forgot password</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h3>Terms and Policies</h3><br>
+                    <ul class="menu_footer">
+                        <li><a style href="">Transaction policy</a></li>
+                        <li><a href="">Benefit policy</a></li>
+                        <li><a href="">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Customer support</h3><br>
+                    <ul class="menu_footer">
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Goods return and exchange policy</a></li>
+                        <li><a href="">Payment policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+<script>
+    function CreateElement(){
+        var colors = [
+            '#FE2E64',
+            '#FA5858',
+            '#0000FF',
+            '#6A0888',
+            '#81F7F3',
+            '#CECEF6',
+            '#F2F5A9'
+        ];
+       var section = document.querySelector('section');
+        var square = document.createElement('span');
+        var size = Math.random()* 50;
+        square.style.width = 10 + size +'px';
+        square.style.height = 10 + size +'px';
+        let bg = colors[Math.floor(Math.random()*colors.length)];
+        square.style.background = bg;
+        square.style.left = Math.random() * innerWidth +'px';
+        square.style.top = Math.random() * innerHeight +'px';
+        section.appendChild(square);
+        setTimeout(()=>{
+            square.remove();
+        },5000);
+    }
+    setInterval(CreateElement,150);
+</script>
+</html>
